@@ -1,0 +1,24 @@
+﻿  main_pointer.c
+c:\users\user\source\repos\project62\project62\main_pointer.c(24): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 'scanf' 선언을 참조하십시오.
+c:\users\user\source\repos\project62\project62\main_pointer.c(26): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: 'fopen' 선언을 참조하십시오.
+c:\users\user\source\repos\project62\project62\main_pointer.c(44): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: 'fopen' 선언을 참조하십시오.
+c:\users\user\source\repos\project62\project62\main_pointer.c(58): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: 'fopen' 선언을 참조하십시오.
+c:\users\user\source\repos\project62\project62\main_pointer.c(72): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: 'fopen' 선언을 참조하십시오.
+c:\users\user\source\repos\project62\project62\main_pointer.c(94): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: 'fopen' 선언을 참조하십시오.
+c:\users\user\source\repos\project62\project62\main_pointer.c(124): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: 'fopen' 선언을 참조하십시오.
+c:\users\user\source\repos\project62\project62\main_pointer.c(162): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: 'fopen' 선언을 참조하십시오.
+c:\users\user\source\repos\project62\project62\main_pointer.c(80): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+c:\users\user\source\repos\project62\project62\main_pointer.c(80): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+c:\users\user\source\repos\project62\project62\main_pointer.c(102): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+c:\users\user\source\repos\project62\project62\main_pointer.c(102): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+c:\users\user\source\repos\project62\project62\main_pointer.c(132): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+c:\users\user\source\repos\project62\project62\main_pointer.c(132): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+  Project62.vcxproj -> C:\Users\User\source\repos\Project62\Debug\Project62.exe
