@@ -1,0 +1,19 @@
+﻿  DCT.c
+  DFT.c
+c:\users\user\desktop\강의자료\[19-2]image processing\image_processing_4_hw\image_processing_4\dft.c(22): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+  c:\users\user\desktop\강의자료\[19-2]image processing\image_processing_4_hw\image_processing_4\dft.c(22): note: 자리 표시자 및 해당 매개 변수에는 variadic 인수가 2개 필요하지만 1개가 제공되었습니다.
+  c:\users\user\desktop\강의자료\[19-2]image processing\image_processing_4_hw\image_processing_4\dft.c(22): note: 누락된 variadic 인수 2이(가) 서식 문자열 '%c'에 필요합니다.
+  c:\users\user\desktop\강의자료\[19-2]image processing\image_processing_4_hw\image_processing_4\dft.c(22): note: 이 인수는 버퍼 크기로 사용됩니다.
+c:\users\user\desktop\강의자료\[19-2]image processing\image_processing_4_hw\image_processing_4\dft.c(95): warning C4244: '함수': 'Double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\desktop\강의자료\[19-2]image processing\image_processing_4_hw\image_processing_4\dft.c(181): warning C4244: '=': 'Double'에서 'UChar'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Filter.c
+c:\users\user\desktop\강의자료\[19-2]image processing\image_processing_4_hw\image_processing_4\filter.c(14): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\강의자료\[19-2]image processing\image_processing_4_hw\image_processing_4\filter.c(16): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\강의자료\[19-2]image processing\image_processing_4_hw\image_processing_4\filter.c(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\강의자료\[19-2]image processing\image_processing_4_hw\image_processing_4\filter.c(23): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  Input_image.c
+  Output_image.c
+  PSNR.c
+  main.c
+  코드를 생성하고 있습니다...
+  Image_Processing_4.vcxproj -> C:\Users\user\Desktop\강의자료\[19-2]Image Processing\Image_Processing_4_HW\Debug\Image_Processing_4.exe
