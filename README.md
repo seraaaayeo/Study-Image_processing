@@ -48,9 +48,26 @@
     * idct_coefficient.c : reconstruct with input coefficient
     * dct_direction.c : dct test
     * psnr.c : you can check how similar with original image and reconstruct image
-    ```
-    psnr(input, outimg);
-    ```
+      add below code in main.c
+      ```
+      psnr(input, outimg);
+      ```
+      ```
+      if (menu == 1) {
+		    DCT(input, output);
+		    print(output, outimg);
+
+		    FILE * outfile = fopen("lena_defaultDCT.img", "wb");
+		    fwrite(outimg, sizeof(char), HEIGHT*WIDTH, outfile);
+		    psnr(input, outimg);
+
+        fclose(outfile);
+		    free(output);
+		    free(outimg);
+
+		    printf("success!");
+	    }
+      ```
 * dft-idft
 * interpolation-NN
 * interpolation-bilinear
