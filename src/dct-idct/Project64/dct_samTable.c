@@ -1,4 +1,4 @@
-#include "dct3.h"
+#include "dct.h"
 
 void sampleDCT(double * sample, double * result)
 {

@@ -1,4 +1,4 @@
-#include "dct3.h"
+#include "dct.h"
 
 void coeIDCT(double * input, unsigned char * output, int m)
 {
@@ -13,7 +13,6 @@ void coeIDCT(double * input, unsigned char * output, int m)
 				for (i = 0; i < N; i++) {
 					sum = 0;
 					for (u = 0; u < N; u++)
-					//for (u = 0; u < (N / pow(2.0, coeffi)) - u; u++)
 					{
 						if (u == 0)
 							c_u = 1 / sqrt(2);
@@ -27,7 +26,6 @@ void coeIDCT(double * input, unsigned char * output, int m)
 								c_v = 1;
 							sum += (c_u * c_v) / ((sqrt(N*N)) / 2)*
 								cos((2 * i + 1) * u * pi / (N * 2)) * cos((2 * j + 1) * v * pi / (N * 2)) *
-								//cos((2 * ((N / pow(2.0, coeffi)) - i) + 1) * u * pi / (N * 2)) * cos((2 * j + 1) * v * pi / (N * 2)) *
 								(*(input + (By * N) + (Bx * N * HEIGHT) + u + v * HEIGHT));
 						}
 					}

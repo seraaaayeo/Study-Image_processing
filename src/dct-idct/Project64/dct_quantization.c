@@ -1,4 +1,4 @@
-#include "dct3.h"
+#include "dct.h"
 
 void QDCT(double * input, double * output)
 {
@@ -44,56 +44,14 @@ void QDCT(double * input, double * output)
 	};
 
 	int i, j, Bx, By;
-	//	*pQ = (double**)malloc(sizeof(double*)*HEIGHT*WIDTH);
-	//  double temp, Q, F, FQ[8][8];
-	/*
-	double *Q35 = (double*)malloc(sizeof(double) * 8 * 8);
-	for (int i = 0; i < 8; i++) {
-		for (int j = 0; j < 8; j++) {
-			*(Q35 + 8 * i + j) = arrQ35[i][j];
-		}
-	}*/
+	
 	for (By = 0; By < HEIGHT / N; By++)
 		for (Bx = 0; Bx < WIDTH / N; Bx++) {
 			for (i = 0; i < N; i++) {
 				for (j = 0; j < N; j++) {
 					*(output + (Bx * N) + (By * N * WIDTH) + i * WIDTH + j) =
 						(round((*(input + (Bx * N) + (By * N * WIDTH) + i * WIDTH + j)) / arrQ35[i][j])) * arrQ35[i][j];
-
-					//= (round((*(input + (Bx * N) + (By * N * WIDTH) + i * WIDTH + j)) / (*Q35 + i * 8 + j))) *(*Q35 + i * 8 + j);
-					//= (round((*(input + (Bx * N) + (By * N * WIDTH) + i * WIDTH + j)) / Q_35db[i][j])) * Q_35db[i][j];
-					//= (round((*(input + (Bx * N) + (By * N * WIDTH) + i * WIDTH + j)) / FQ[i][j])) * (FQ[i][j]);
-				//F = *(input + (Bx * N) + (By * N * WIDTH) + i * WIDTH + j);
-				//temp = round(F / *FQ) * (*FQ);
-				//*(output + (Bx * N) + (By * N * WIDTH) + i * WIDTH + j) = temp;
 				}
 			}
 		}
 }
-/*
-void QIDCT(double * input, unsigned char * output)
-{
-	int i, j, Bx, By;
-
-	double arrQ35[8][8] = {
-			{16, 11, 10, 16, 24, 40, 51, 61},
-		{12, 12, 14, 19, 26, 58, 60, 55},
-		{14, 13, 16, 24, 40, 57, 69, 56},
-		{18, 22, 37, 56, 68, 109, 103, 77},
-		{24, 35, 55, 64, 81, 104, 113, 92},
-		{49, 64, 78, 87, 103, 121, 120, 101},
-		{49, 64, 78, 87, 103, 121, 120, 101},
-		{72, 92, 95, 98, 112, 100, 130, 99}
-	};
-
-	for (Bx = 0; Bx < WIDTH / N; Bx++)
-		for (By = 0; By < HEIGHT / N; By++) {
-			for (j = 0; j < N; j++) {
-				for (i = 0; i < N; i++) {
-					*(output + (By * N) + (Bx * N * HEIGHT) + i + j*HEIGHT) =(unsigned char)
-						((round((*(input + (By * N) + (Bx * N * HEIGHT) + i + j*HEIGHT)) / arrQ35[i][j])) * arrQ35[i][j]);
-				}
-			}
-		}
-}
-*/

@@ -140,20 +140,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="dct5_direction.c" />
-    <ClCompile Include="time.c" />
+    <ClCompile Include="dct_direction.c" />
     <ClCompile Include="idct_coefiicient.c" />
     <ClCompile Include="print.c" />
-    <ClCompile Include="dct5_edit.c" />
+    <ClCompile Include="dct.c" />
     <ClCompile Include="idct.c" />
-    <ClCompile Include="main_dct3.c" />
+    <ClCompile Include="main.c" />
     <ClCompile Include="psnr.c" />
-    <ClCompile Include="dct5_quantization.c" />
+    <ClCompile Include="dct_quantization.c" />
     <ClCompile Include="dct_samTable.c" />
-    <ClCompile Include="zebra.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dct3.h" />
+    <ClInclude Include="dct.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

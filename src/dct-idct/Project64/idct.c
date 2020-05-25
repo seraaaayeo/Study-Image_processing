@@ -1,4 +1,4 @@
-#include "dct3.h"
+#include "dct.h"
 
 void IDCT(double * input, unsigned char * output)
 {
@@ -26,15 +26,8 @@ void IDCT(double * input, unsigned char * output)
 							sum += (c_u * c_v) / ((sqrt(N*N)) / 2)*
 								cos((2 * i + 1) * u * pi / (N * 2)) * cos((2 * j + 1) * v * pi / (N * 2)) *
 								(*(input + (By * N) + (Bx * N * HEIGHT) + u + v * HEIGHT));
-								//(*(input + u + v * HEIGHT));
-
-							/*
-							for (int m = 0; m < N; m++) {
-								b_vector = (c_v / 2)*(cos(2 * m + 1)*v*pi) / (2 * N);
-								sum += b_vector; */
 						}
 					}
-					//*(output + j) = *(input + j)*sum;
 					sum = (unsigned char)sum;
 					*(output + (By * N) + (Bx * N * HEIGHT) + i + j * HEIGHT) = sum;
 				}

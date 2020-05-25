@@ -1,4 +1,4 @@
-#include "dct3.h"
+#include "dct.h"
 
 void DCT(unsigned char *input, double * output)
 {
@@ -36,8 +36,6 @@ void DCT(unsigned char *input, double * output)
 						}
 					}
 					*(output + (Bx * N) + (By * N * WIDTH) + u * WIDTH + v) = (c_u * c_v) / (sqrt(N * N) / 2) * sum;
-					//*(output + u * WIDTH + v) = (c_u * c_v) * (2/(sqrt(N*N))) * sum;
-					//printf("%lf ", *(output + u * WIDTH + v));
 				}
 				//printf("\n");
 			}
@@ -45,41 +43,5 @@ void DCT(unsigned char *input, double * output)
 	end = clock();
 	howlong = (double)(end - start);
 	printf("how long : %lf (ms)\n", howlong);
-	
-	/*
-	////////////	basis vector 구현을 위한 c_v값 정의		//////////////
-	for (v = 0; v < N; v++) {
-		if (v == 0)
-			c_v = (1 / sqrt(2));
-		else
-			c_v = 1;
-		sum = 0;
 
-		///////////		basis vector와 Nx1 블록 데이터를 컨볼루션	/////////////
-		for (j = 0; j < N; j++) {
-			sum += cos(((2 * j + 1)*v*pi) / (2 * N))*(*(input + j));
-		}
-
-		///////////		DCT 연산 마무리		//////////
-		*(output + v) = (c_v / 2)*sum;
-		printf("DCT : %lf", *(output + v));
-	*/
-
-			/*
-			temp = 0;
-			////////////////	step2 : A2,B2,...H2 정의	//////////////////
-			for (int m = 0; m < N; m++) {
-				sum = 0;
-				b_vector=(c_v / 2)*cos(((2 * m + 1)*v*pi) / (2 * N)); //v=0 -> b_vector=A2, m=0 ->A2의 첫번째 원소
-			*/
-			///////////////		step3 : DCT된 벡터 a2, b2...h2 정의		///////////////
-			/* a2 = a1A2 + b1A2 + ... + h1A2 = sum(8개의 픽셀 pixel[j]) 곱하기 A2 */
-		/*	for (j = 0; j < N; j++) {
-				sum += *(input + j)*b_vector;
-			}
-			temp += sum;
-		}
-		*(output + v) = temp;
-	*/
-	
 }
