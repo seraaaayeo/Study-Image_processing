@@ -48,6 +48,9 @@
     * idct_coefficient.c : reconstruct with input coefficient
     * dct_direction.c : dct test
     * psnr.c : you can check how similar with original image and reconstruct image
+    ```
+    psnr(input, outimg);
+    ```
 * dft-idft
 * interpolation-NN
 * interpolation-bilinear
