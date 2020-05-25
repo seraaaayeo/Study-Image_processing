@@ -80,7 +80,7 @@ void XDCT(unsigned char *input, double * output)
 	*(output + u) = (c_u) / (sqrt(N) / 2) * sum;
 }
 
-void XDCT(unsigned char *input, double * output)		///°¡·Î¹æÇâ dct
+void XDCT(unsigned char *input, double * output)		///ï¿½ï¿½ï¿½Î¹ï¿½ï¿½ï¿½ dct
 {
 	int j, v;
 	double c_v, sum;
@@ -124,7 +124,7 @@ void YDCT(unsigned char *input, double * output)
 		
 	*/
 
-	/* ÀüÃ¼ ÇÈ¼¿¿¡ Á¢±ÙÇÏ±â
+	/* ï¿½ï¿½Ã¼ ï¿½È¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
 	for (i = 0; i < HEIGHT; i++)
 		for (j = 0; j < WIDTH; j++)
 			MSE += (*(input + i * WIDTH + HEIGHT) - *(output + i * WIDTH + HEIGHT))* (*(input + i * WIDTH + HEIGHT) - *(output + i * WIDTH + HEIGHT));
