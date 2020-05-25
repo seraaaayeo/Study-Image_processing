@@ -32,8 +32,8 @@
 ## Docs
 #### display
 * this includes raw image display program
-* RDisp
-* yuvplayer : Size -> Custom, Color -> Y
+    * RDisp
+    * yuvplayer : Size -> Custom, Color -> Y
 
 #### img
 * this is raw image folder which are the most frequently used in image processing, including lena, baboon, and F16
