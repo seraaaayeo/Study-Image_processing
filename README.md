@@ -27,8 +27,6 @@
 |**visual studio** | <center>v2017 or higher</center> |
 |**git** | <center>We follow the Github flow</center> |
 
-***
-
 ## Docs
 #### display
 * this includes raw image display program
@@ -41,6 +39,9 @@
 #### src
 * img_pointer
 * dct-idct
+    * default : 8X8 dct block (block param : N in dct3.h)
+    * dct5_quantization.c : reconstruct with 35dB, 58dB, 28dB, and 30dB quantization coefficient
+    * idct_coefficient.c : reconstruct with input coefficient
 * dft-idft
 * interpolation-NN
 * interpolation-bilinear
