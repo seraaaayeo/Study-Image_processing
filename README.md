@@ -27,6 +27,10 @@
 |**visual studio** | <center>v2017 or higher</center> |
 |**git** | <center>We follow the Github flow</center> |
 
+#### Must to do
+* you have to include raw image file in your working directory.
+* I.E) if you work on dct-idct, you have to copy lena image in dct-idct\Project64
+
 ## Docs
 #### display
 * this includes raw image display program
@@ -39,9 +43,11 @@
 #### src
 * img_pointer
 * dct-idct
-    * default : 8X8 dct block (block param : N in dct3.h)
-    * dct5_quantization.c : reconstruct with 35dB, 58dB, 28dB, and 30dB quantization coefficient
+    * default : 8X8 dct block (block param : N in dct.h)
+    * dct_quantization.c : reconstruct with 35dB, 58dB, 28dB, and 30dB quantization coefficient
     * idct_coefficient.c : reconstruct with input coefficient
+    * dct_direction.c : dct test
+    * psnr.c : you can check how similar with original image and reconstruct image
 * dft-idft
 * interpolation-NN
 * interpolation-bilinear

@@ -1,4 +1,4 @@
-#include "dct3.h"
+#include "dct.h"
 
 void psnr(unsigned char * input, unsigned char * output)
 {

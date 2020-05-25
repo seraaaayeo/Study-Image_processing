@@ -1,4 +1,4 @@
-#include "dct3.h"
+#include "dct.h"
 
 void print(double *input, unsigned char *output)
 {

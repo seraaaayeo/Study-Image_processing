@@ -1,7 +1,2 @@
-﻿  main_dct3.c
-c:\users\user\source\repos\project64\project64\main_dct3.c(21): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: 'fopen' 선언을 참조하십시오.
-c:\users\user\source\repos\project64\project64\main_dct3.c(63): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: 'fopen' 선언을 참조하십시오.
-c:\users\user\source\repos\project64\project64\main_dct3.c(5): warning C4101: 'menu' :참조되지 않은 지역 변수입니다.
-  Project64.vcxproj -> C:\Users\User\source\repos\Project64\Debug\Project64.exe
+﻿  dct_samTable.c
+  Project64.vcxproj -> C:\workspace\C\image-processing\src\dct-idct\Debug\Project64.exe
