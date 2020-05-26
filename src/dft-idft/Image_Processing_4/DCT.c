@@ -68,7 +68,7 @@ void DCT(Img_Buf *img)
 					}
 				}
 			}
-			else { // 빼고싶으면 빼라한게 여긴가
+			else {
 				for (i = 0; i < NNBlk; i++)
 				{
 					for (j = 0; j < NNBlk; j++)

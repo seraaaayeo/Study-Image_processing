@@ -51,7 +51,6 @@ void DFT(Img_Buf *img)
 							//img->DFT_Real[i] += img->CurBlk[i] * cos(2 * PI * l * i / NNBlk); // 세로방향 DFT
 							img->DFT_Real[(Blk_Row*NNBlk) + (Blk_COl * NNBlk * img->info.width) + i*img->info.width + j]
 								+= img->CurBlk[k*NNBlk + l] * cos((2 * PI * l * j / NNBlk) + (2 * PI * k * i / NNBlk));
-								//* (cos(2 * PI * l * i / NNBlk)* cos(2 * PI * k * j / NNBlk)); // 가로세로 DFT
 							
 							img->DFT_Imag[(Blk_Row*NNBlk) + (Blk_COl * NNBlk * img->info.width) + i*img->info.width + j]
 								-= img->CurBlk[k*NNBlk + l] * sin((2 * PI * l * j / NNBlk) + (2 * PI * k * i / NNBlk));
@@ -68,7 +67,6 @@ void DFT(Img_Buf *img)
 			if (NNBlk == img->info.width && NNBlk == img->info.height && FilterFlag == 'y')
 				LPF(img, Blk_Row, Blk_COl);
 
-			// 얜 뭐야
 			for (i = 0; i < NNBlk; i++)
 			{
 				for (j = 0; j < NNBlk; j++)
@@ -142,8 +140,7 @@ void IDFT(Img_Buf *img)
 			{
 				for (j = 0; j < NNBlk; j++)
 				{
-					// 8x8 block을 떼오는 과정?
-					// 이건 뭘까 X(k) = a+ib = |X|[cos + isin] = magnitude[cos(phase) + isin(phase)] 이부분인가
+					// 이건 X(k) = a+ib = |X|[cos + isin] = magnitude[cos(phase) + isin(phase)] 이부분
 					// a=mag*cos(phase), b=mag*sin(phase) -> a=IDFT_R, b=IDFT_I
 					img->IDFT_Real[(Blk_Row*NNBlk) + (Blk_COl * NNBlk * img->info.width) + i * img->info.width + j]
 						= (img->Magnitude[(Blk_Row*NNBlk) + (Blk_COl * NNBlk * img->info.width) + i * img->info.width + j]
@@ -164,12 +161,9 @@ void IDFT(Img_Buf *img)
 						for (l = 0; l < NNBlk; l++) // 가로
 						{
 							// X(a,b)의 실수부 = IDFT_R(a,b), X(a,b)의 허수부 = IDFT_I
-							//Recon_R += img->IDFT_Real[(Blk_Row*NNBlk)+(Blk_COl*NNBlk*WIDTH) + k*WIDTH + l] * cos((2*PI*k/ NNBlk) * i) 
-								//- img->IDFT_Imag[(Blk_Row*NNBlk) + (Blk_COl*NNBlk*WIDTH) + k*WIDTH + l] * sin((2 * PI *l / NNBlk)* j);
 							Recon_R += img->IDFT_Real[(Blk_Row*NNBlk) + (Blk_COl*NNBlk*WIDTH) + k * WIDTH + l] * cos((2 * PI*(l*j + k*i)/ NNBlk))
 								- img->IDFT_Imag[(Blk_Row*NNBlk) + (Blk_COl*NNBlk*WIDTH) + k * WIDTH + l] * sin((2 * PI *(l*j + k * i) / NNBlk));
 						}
-
 					}
 
 					if (Recon_R < 0) 

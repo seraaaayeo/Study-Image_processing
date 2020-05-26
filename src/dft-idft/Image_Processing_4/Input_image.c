@@ -21,8 +21,6 @@ void Input_Image(Img_Buf *img)
 
 	img->Spectrum  = (Double*)calloc(img->info.width*img->info.height, sizeof(Double));
 	img->Re_CurBlk = (Double*)calloc(img->info.width*img->info.height, sizeof(Double));
-	
 
 	fread(img->Ori_pix, sizeof(UChar), (img->info.width * img->info.height), img->Input_Original);  // 원본 영상 읽기(원본 영상의 화소값을 배열 변수에 저장)
-	//fread(img->CurBlk, sizeof(UChar), (img->info.width * img->info.height), img->Input_Original); 
 }
