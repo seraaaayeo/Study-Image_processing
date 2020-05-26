@@ -7,7 +7,6 @@
 #define WIDTH 512
 #define pi 3.1415926535
 
-
 int main(void)
 {
 	int menu;
@@ -45,7 +44,7 @@ int main(void)
 		FILE * outfile = fopen("F16_UpDown.img", "wb");		//출력 파일을 쓰기 모드로 열기
 		fwrite(new_img, sizeof(char), HEIGHT*WIDTH, outfile);		//결과 이미지에 픽셀 정보 저장
 		fclose(outfile);
-		free(new_img);		//���� �Ҵ��� �޸��� ���ҽ� ����
+		free(new_img);
 	}
 	
 	else if (menu == 2) {
