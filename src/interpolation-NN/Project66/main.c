@@ -6,7 +6,6 @@ int main(void)
 	output = (unsigned char*)malloc(sizeof(unsigned char)*HEIGHT*WIDTH);
 	outimg = (unsigned char*)malloc(sizeof(unsigned char)*HEIGHT*WIDTH);
 
-//	d_output = (double*)malloc(sizeof(double)*HEIGHT*WIDTH);
 	upoutput = (unsigned char*)malloc(sizeof(unsigned char)*UP_SIZE*UP_SIZE);
 	downoutput = (unsigned char*)malloc(sizeof(unsigned char)*DOWN_SIZE*DOWN_SIZE);
 
@@ -24,7 +23,6 @@ int main(void)
 	fclose(infile);
 
 	///////////////			영상 처리			///////////////
-//	downwindow(input, outimg);	//윈도우 크기보다 작아진 화면 출력
 	newfilter(input, result);
 	downwindow(result, output);
 	upwindow(output, outimg);
