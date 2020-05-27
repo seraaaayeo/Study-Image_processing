@@ -42,7 +42,7 @@
 
 #### src
 * img_pointer
-  You can get used to pointer by vertical mirroring, horizon mirroring, and rotating
+  * You can get used to pointer by vertical mirroring, horizon mirroring, and rotating
     * 
 * dct-idct
   You can understand lossy and loseless compression by practicing discrete cosine transform(DCT) and reconstruction(Inverse DCT - IDCT).
