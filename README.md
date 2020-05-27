@@ -43,9 +43,9 @@
 #### src
 * img_pointer
   * You can get used to pointer by vertical mirroring, horizon mirroring, and rotating
-    * arr.c : image transform with array
-    * main_pointer.c : image transform with pointer
-    
+    * arr.c : image transformation with array
+    * main_pointer.c : image transformation with pointer
+
 * dct-idct
   * You can understand lossy and loseless compression by practicing discrete cosine transform(DCT) and reconstruction(Inverse DCT - IDCT).
     * default : 8X8 dct block (block param : N in dct.h)
