@@ -73,7 +73,12 @@
 		    printf("success!");
 	    }
       ```
+
 * dft-idft
+  * You can understand Fourier Transform in Image Processing
+      * DCT.c : Discrete Cosine Transform
+      * DFT.c : Discrete Fourier Transform
+      * Filter.c : LPF
 * interpolation-NN
 * interpolation-bilinear
 * interpolation-cubic_convolution
