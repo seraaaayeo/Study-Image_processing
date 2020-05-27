@@ -45,7 +45,7 @@
   * You can get used to pointer by vertical mirroring, horizon mirroring, and rotating
     * 
 * dct-idct
-  You can understand lossy and loseless compression by practicing discrete cosine transform(DCT) and reconstruction(Inverse DCT - IDCT).
+  * You can understand lossy and loseless compression by practicing discrete cosine transform(DCT) and reconstruction(Inverse DCT - IDCT).
     * default : 8X8 dct block (block param : N in dct.h)
     * dct_quantization.c : reconstruct with 35dB, 58dB, 28dB, and 30dB quantization coefficient
     * idct_coefficient.c : reconstruct with input coefficient
