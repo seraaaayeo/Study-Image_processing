@@ -7,8 +7,8 @@
 
 ## Project List
 * [Image_pointer](https://github.com/seraaaayeo/study-image_processing/tree/master/src/img_pointer) : Image Rotation with Pointer
-* [DCT](https://github.com/seraaaayeo/study-image_processing/tree/master/src/dct-idct) : Discrete Cosine Transform and Inverse
-* [DFT](https://github.com/seraaaayeo/study-image_processing/tree/master/src/dft-idft) : Discrete Fourier Transform and Inverse
+* [DCT](https://github.com/seraaaayeo/study-image_processing/tree/master/src/dct-idct) : Discrete Cosine Transform and Reconstruct
+* [DFT](https://github.com/seraaaayeo/study-image_processing/tree/master/src/dft-idft) : Discrete Fourier Transform and Reconstruct
 * [Interpolation-Sample_and_hold](https://github.com/seraaaayeo/study-image_processing/tree/master/src/interpolation-NN) : upscaling, downscaling with Sample and hold interpolation
 * [Interpolation-Bilinear](https://github.com/seraaaayeo/study-image_processing/tree/master/src/interpolation-Bilinear) : upscaling, downscaling with Bilinear interpolation
 * [Interpolation-cubic_convolution](https://github.com/seraaaayeo/study-image_processing/tree/master/src/interpolation-cubic_convolution) : upscaling, downscaling with Cubic convolution interpolation
