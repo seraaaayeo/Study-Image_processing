@@ -76,10 +76,15 @@
 
 * dft-idft
   * You can understand Fourier Transform in Image Processing
-      * DCT.c : Discrete Cosine Transform
-      * DFT.c : Discrete Fourier Transform
-      * Filter.c : LPF
-* interpolation-NN
-* interpolation-bilinear
-* interpolation-cubic_convolution
-* interpolation-cubic_Bspline
+    * DCT.c : Discrete Cosine Transform
+    * DFT.c : Discrete Fourier Transform
+    * Filter.c : LPF
+
+* interpolation
+  * You can choice 4 interpolation algorithm when upscaling, downscaling, or rotating images
+  * You can upscale img, downscale img, upscale img and reconstruct, and downscale img and reconstruct with or without LPF
+    * interpolation-sample_and_hold
+    * interpolation-bilinear
+    * interpolation-cubic_convolution
+    * interpolation-cubic_Bspline
+
