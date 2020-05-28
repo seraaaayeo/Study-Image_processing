@@ -85,6 +85,10 @@
   * You can upscale img, downscale img, upscale img and reconstruct, and downscale img and reconstruct with or without LPF
     * interpolation-sample_and_hold
     * interpolation-bilinear
+      * filter.c : pre-calculate and declare filter
+      * makeFilter.c : you can make LPF with this code
     * interpolation-cubic_convolution
     * interpolation-cubic_Bspline
+      * main.c : basic main function
+      * menu.c : updated main function with menu
 
