@@ -1,4 +1,4 @@
-<h2 align="center">Image Processing</h2>
+<h3 align="center">Image Processing</h3>
 <p align="center">
   Multimedia Processing Traning in Summer, 2019
 </p>
